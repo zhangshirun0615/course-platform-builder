@@ -1,0 +1,54 @@
+{
+ "platform": {
+  "title": "示例专业学习平台",
+  "subtitle": "课程学习 · 知识图谱 · 闯关练习",
+  "intro": "这是一个示例配置：把资源目录换成你的课程文件夹，按需增删课程。",
+  "categories": [
+   {"id": "all", "name": "全部"},
+   {"id": "专业核心", "name": "专业核心"},
+   {"id": "软件基础", "name": "软件基础"},
+   {"id": "拓展课程", "name": "拓展课程"}
+  ]
+ },
+ "resourcesRoot": "D:\\课程资源",
+ "courses": [
+  {
+   "id": "example-video",
+   "type": "video",
+   "category": "专业核心",
+   "title": "示例视频课程",
+   "subtitle": "第一层目录作为模块",
+   "description": "扫描后自动生成课时；可在 data/outlines.json 里补充课程大纲。",
+   "accent": "#ff8a3d",
+   "tags": ["示例"],
+   "roots": [
+    {"root": "示例课程文件夹", "modules": "stage",
+     "renames": {"第一章": "第一章 · 基础"}}
+   ]
+  },
+  {
+   "id": "example-gallery",
+   "type": "gallery",
+   "category": "拓展课程",
+   "title": "示例图文课程",
+   "subtitle": "PDF + 图片 + 章节考核",
+   "description": "只有 PDF/图片时使用 gallery，可在 data/generated/gallery-chapters.json 里加章节考核。",
+   "accent": "#7ee0c3",
+   "tags": ["图文"],
+   "roots": [
+    {"root": "示例资料文件夹", "modules": "gallery", "label": "教材"}
+   ]
+  },
+  {
+   "id": "example-bili",
+   "type": "bilibili",
+   "category": "拓展课程",
+   "title": "示例 B 站课程",
+   "subtitle": "自动拉取分 P",
+   "description": "填 bv 号即可，构建时自动获取标题、封面、时长。",
+   "accent": "#6bc5ff",
+   "tags": ["B站"],
+   "bilibili": {"bv": "BV1xxxxxxxxx"}
+  }
+ ]
+}
