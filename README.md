@@ -7,6 +7,11 @@
 - **界面与 UI 调整 Agent**（`agents/ui-adjuster.md`）
 - **课程内容体系优化 Agent**（`agents/content-optimizer.md`）
 
+## 云端仓库
+- GitHub：https://github.com/zhangshirun0615/course-platform-builder
+- 克隆：`git clone https://github.com/zhangshirun0615/course-platform-builder.git`
+- 本机只保留工作副本，模板/脚本都有云端备份；如需私有化，可在 GitHub 设置改为 Private。
+
 ## 适用场景
 - 换专业/换学科：只改 `course-config.json`，前端与功能全部复用；
 - 课程资源散乱：自动扫描、合并去重、生成模块与课时；

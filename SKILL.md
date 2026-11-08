@@ -75,6 +75,7 @@ python bot.py serve --platform D:\my-platform
 - 教师端/学生端在本地服务器可用，在线镜像不暴露 `/api`。
 
 ## 存储与分发
-- 本地只需保留本 skill 包（约 0.5~2 MB）与生成后的平台；
-- 建议把 skill 包放到云端 Git 仓库（本包提供 `scripts/publish_repo.py`），本机只留工作副本；
-- 课程视频不复制、不转码（除特殊需要），由启动器按原路径直连，避免重复占用空间。
+- 云端主副本：https://github.com/zhangshirun0615/course-platform-builder
+- 本地工作副本：工作区 `skills/course-platform-builder/`（约 0.5 MB + 431 KB 模板 zip）
+- 更新云端：`python scripts/publish_repo.py --repo course-platform-builder --dir . --message "update"`
+- 换机器：clone 云端仓库即可；课程视频不复制、不转码（除特殊需要），由启动器按原路径直连，避免重复占用空间。
