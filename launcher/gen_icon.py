@@ -36,5 +36,6 @@ if font:
 else:
     d.ellipse((150, 150, 362, 362), fill=(255, 245, 235, 255))
 
+img.save(OUT.with_suffix(".png"))
 img.save(OUT, sizes=[(16, 16), (24, 24), (32, 32), (48, 48), (64, 64), (128, 128), (256, 256)])
 print("saved", OUT, OUT.stat().st_size, "bytes")

@@ -8,6 +8,9 @@
 2. 需要 Python 3.10+；视频封面/时长需要 ffmpeg（可放在 `<platform>/tools/ffmpeg.exe`，或用系统 ffmpeg）。
 3. 无需 npm 构建；页面是纯静态 ES Modules。
 
+## 文档
+- 图文版说明：docs/课程平台Bot_使用与管理说明.docx（可用 python scripts/build_bot_manual.py 重新生成）
+
 ## 桌面启动器（推荐）
 `launcher/` 里带一个图形启动器，双击即可用，不需要记命令：
 
