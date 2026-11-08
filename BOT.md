@@ -8,6 +8,15 @@
 2. 需要 Python 3.10+；视频封面/时长需要 ffmpeg（可放在 `<platform>/tools/ffmpeg.exe`，或用系统 ffmpeg）。
 3. 无需 npm 构建；页面是纯静态 ES Modules。
 
+## 桌面启动器（推荐）
+`launcher/` 里带一个图形启动器，双击即可用，不需要记命令：
+
+- **桌面/开始菜单快捷键**：运行 `launcher\install_shortcuts.ps1`，会创建「课程平台 Bot」快捷方式（图标为橙色「课」）。
+- **直接打开**：`launcher\启动Bot.bat`（有控制台，便于排错）或 `launcher\launch.vbs`（无控制台）。
+- **界面按钮**：① 新建平台 → ② 扫描课程 → ③ 生成平台 → ④ 检查内容 → ⑤ 启动平台；另有打开 Agent 目录、云端仓库、清空日志。
+- 首次使用若提示 PowerShell 执行策略，用 `install_shortcuts.ps1` 创建的快捷方式已带 `-ExecutionPolicy Bypass`，无需手动改策略。
+- 图标/快捷方式重建：`python launcher\gen_icon.py` 生成图标；`powershell -ExecutionPolicy Bypass -File launcher\install_shortcuts.ps1` 重建快捷方式。
+
 ## 命令
 | 命令 | 作用 |
 | --- | --- |

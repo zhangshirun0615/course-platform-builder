@@ -22,6 +22,12 @@
 - Python 3.10+（Windows / macOS / Linux 均可）
 - 可选：ffmpeg（读取视频时长、生成课程封面）；不装也能跑，只是时长/封面缺失
 
+## 桌面启动器
+双击桌面/开始菜单的「课程平台 Bot」即可打开图形界面（新建平台 / 扫描课程 / 生成平台 / 检查内容 / 启动平台）。
+- 首次使用：launcher\install_shortcuts.ps1 创建快捷方式
+- 直接运行：launcher\启动Bot.bat 或 launcher\launch.vbs
+- 图标：launcher\bot.ico
+
 ## 快速开始
 ```bat
 python bot.py new --dest D:\my-platform --title "XX专业学习平台" --resources "D:\课程资源"
